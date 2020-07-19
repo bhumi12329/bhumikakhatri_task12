@@ -1,0 +1,133 @@
+
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,intial-scale=1.0">    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!--font awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="epamstyle.css">
+      <title>epam login page</title>
+      
+            <script type = "text/javascript">
+        function Validate() {
+         var emailID = document.myForm.email.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+        var pwd=document.myForm.password.value;
+         var con=document.myForm.contact.value;
+        var phno= /^\d{10}$/;
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID");
+            document.myForm.email.focus() ;
+            return false;
+         }
+            else if(pwd==null || pwd==" ")
+                {
+                    alert("Please enter valid password");
+                    return false;
+                }
+           else if(!con.value.match(phoneno))
+        {
+            alert("Please enter valid phone no");
+           return false;
+         }
+            else
+         return( true );
+        }
+ 
+      </script>      
+ 
+    </head>  
+    <body>
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-15 col-md-7 col-lg-5 mx-auto">
+                   <div class="card">
+           <nav class="header">
+                           
+                              <img class="logo" src="epam.png" alt="" style="margin-top: -20px;
+                                    border-radius:50%; border-color: white;">  
+                               <h1 class="lead">
+                                    
+                                   <div class="primary">Sign In</div></h1>
+                                 
+                                   <button type="button" class="close" style="color: black;" data-dismiss="card">&times;</button>
+                               
+                           </nav>
+<!--
+           <div class="row">
+               <div class="col-sm-15 col-md-7 col-lg-5 mx-auto">
+                   <div class="card">
+                       <div class="card-body">
+-->
+<!--
+                           <nav class="header">
+                           
+                              <img class="logo" src="epam.png" alt="">  
+                               <h1 class="lead">
+                                    
+                                   <div class="primary">Sign In</div></h1>
+                                 
+                                   <button type="button" class="close" data-dismiss="card">&times;</button>
+                               
+                           </nav>
+-->
+                       <div class="card-body">
+                           <form name="myForm" method="post" onsubmit="return Validate();">
+                               <div class="form-group">
+                                   <div class="user">
+                                   <input type="text" class="form-control" name="email" placeholder="mail@example.com">
+                                       <i class="fa fa-envelope"></i></div>
+                              </div>
+                               <div class="form-group">
+                                <div class="pwd"> 
+                                 <input type="password" class="form-control" name="password"
+                                        placeholder="password">
+                                    <i class="fa fa-lock"></i>
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                <div class="contact"> 
+                                 <input type="Contact" class="form-control" name="contact"
+                                        placeholder="Contact">
+                                    <i class="fa fa-phone"></i>
+                                   </div>
+                               </div>
+                               <div>
+                                   <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In
+                                   </button>
+                                   
+                               </div>
+                           </form>
+                           <form name="myform1">
+                               <div  class="label">
+                                   <h6 class="rem">Forgot password?</h6>
+                                   <h6 class="reg">Register!</h6>
+                               </div>
+                               <div class="or">
+                                   <h4>OR</h4> 
+                               </div>
+                                <div>
+                                   <button class="btn btn-lg btn-block facebook">f</button>
+                               </div>
+                               <div>
+                                   <button class="btn btn-lg btn-block google">g</button>
+                               </div>
+                                
+                                   <div>
+                                   <button class="btn btn-lg btn-block epam">EPAM LOGIN</button>
+                               </div>
+                          
+                           </form>
+                       </div>
+                   </div>
+               </div>      
+           </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,190 @@
+@charset "ISO-8859-1";
+
+body{
+  background: linear-gradients (to right   #007bff #349ff7);
+}
+.card{
+    margin-top: 40px;
+    border-radius: 20px;
+    position: relative
+}
+.header{
+    width: inherit;
+    height: inherit;
+    color: white;
+    top: 0%;
+    height: 50px;
+    background-color:skyblue;
+    margin-bottom: 20px;
+     display: inline-block;
+    box-sizing: content-box;
+}
+
+.logo{
+    width: 20%;
+    color: white;
+    height: 60%;
+    text-align: left;
+    margin-left:0%;
+    margin-right:18%;
+     display: inline-block;
+}
+.lead{
+    
+    color: white;
+    display: inline-block;
+    
+    text-align: center;
+}
+.primary{
+    bottom:0%;
+    display: inline-block;
+    font-size: 25px;
+
+}
+.close{
+    bottom: 0%;
+     color:white;
+     display: inline-block;
+    border-right: 0%
+}
+
+.form-group input
+{
+    border-radius: 50px;
+    padding-left: 54px;
+    
+}
+
+/*
+.form-group::Before{
+    font-family: :'Font Awesome\ 5 Free';
+    content:"\f0e0";
+    color: #555e60;
+    position: absolute;
+    right: 10%;
+    font-size: 22px;
+}
+*/
+.user
+{
+    position: relative;
+}
+.user i
+{
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    color: gray;
+}
+.pwd
+{
+    position: relative;
+}
+.pwd i
+{
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    color: gray;
+}
+.contact
+{
+    position: relative;
+}
+.contact i
+{
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    color: gray;
+}
+/*
+.form-group:last-of-type::Before{
+    
+    content:"\f3c2";
+    color: #555e60;
+    position: absolute;
+    right: 10%;
+    font-size: 22px;
+}
+*/
+.btn{
+    border-radius: 50px;
+    padding:10px 0;
+    background-color: skyblue;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.label{
+    border-radius: 40px;
+}
+.rem{
+    font-size: 12px;
+    text-align: left;
+    margin-right: 250px;
+    position: absolute;
+   
+}
+
+.reg{
+    font-size: 12px;
+    text-align: right;
+   
+    
+}
+.or{
+    margin-top: -5%;
+    color:darkgrey;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15%;
+    
+}
+h4:before{
+    content: "";
+    display: block;
+    width: 150px;
+    height:2px;
+    background: darkgrey;
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+}
+h4:After{
+    content: "";
+    display: block;
+    width: 150px;
+    height:2px;
+    background:darkgrey;
+    position: absolute;
+    right: 0;
+    top:50%;
+
+}
+
+.facebook
+{
+    background-color: darkblue;
+    color:azure;
+     font-size: 20px;
+    font-family: fantasy;
+    shape-inside:rectangleellipse(10%);
+    
+}
+.google{
+    background-color: #b23121;
+    font-size: 20px;
+    color:azure;
+    font-family:monospace;
+
+}
+.epam
+{
+    margin-top: 10%;
+    background-color:yellowgreen;
+    color:azure;
+     font-size: 20px;
+    
+}
